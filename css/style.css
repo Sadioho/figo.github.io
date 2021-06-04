@@ -362,7 +362,8 @@ html {
   padding: 14rem 0;
   background-color: #F8FBF5;
   margin-top: 7.5rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .footer__leaves-1 {
     position: absolute;
     top: 50%;
@@ -1085,18 +1086,20 @@ html {
     top: 60%;
     left: 8%;
     z-index: -100; }
-  @media only screen and (max-width: 56.25em) {
-    .welcome__img {
-      padding-right: 1rem; } }
-  .welcome__img img {
-    width: 100%;
-    background-color: #F8FBF5; }
-    @media only screen and (max-width: 37.5em) {
-      .welcome__img img {
-        margin-top: 2rem; } }
+  .welcome__img {
+    padding-right: 1rem; }
     @media only screen and (max-width: 56.25em) {
-      .welcome__img img {
-        width: 100%; } }
+      .welcome__img {
+        padding-right: 1rem; } }
+    .welcome__img img {
+      width: 100%;
+      background-color: #F8FBF5; }
+      @media only screen and (max-width: 37.5em) {
+        .welcome__img img {
+          margin-top: 2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .welcome__img img {
+          width: 100%; } }
 
 .reason {
   position: relative; }
