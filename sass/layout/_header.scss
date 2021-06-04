@@ -86,11 +86,16 @@
         transform: translate(-50%, -0%);
       }
       @include respond(tab-port) {
-        position: absolute;
         top: -10rem;
         right: 0rem;
-        z-index: -100;
       }
+      @include respond(tab-land){
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -10;
+      }
+    
     }
   }
   .btn {

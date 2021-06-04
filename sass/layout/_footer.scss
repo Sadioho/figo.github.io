@@ -30,7 +30,7 @@
   }
 
   &__logo {
-   @include respond(tab-port){
+   @include respond(tab-land){
      text-align: center;
    }
     &-text {
@@ -42,7 +42,7 @@
     }
     &-icon {
       display: flex;
-      @include respond(tab-port){
+      @include respond(tab-land){
        justify-content: center;
        margin-bottom: 5rem;
       }
@@ -67,7 +67,7 @@
   }
   &__menu {
     margin-top: 1rem;
-    @include respond(tab-port){
+    @include respond(tab-land){
       text-align: center;
      margin-bottom: 5rem;
     }
