@@ -1,0 +1,90 @@
+.footer {
+  padding: 14rem 0;
+  background-color: $color-green-light;
+  margin-top: 7.5rem;
+  position: relative;
+
+  &__leaves-1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+    @include respond(phone){
+      top: 0;
+      left: 0;
+      transform: unset;
+    }
+  }
+  &__leaves-2 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+    @include respond(phone){
+      // top: 0;
+     right: 0;
+      transform: unset;
+    }
+  }
+
+  &__logo {
+   @include respond(tab-port){
+     text-align: center;
+   }
+    &-text {
+      margin: 2.8rem 0;
+      font-family: $font-family-josefin;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      color: $color-grey-light-2;
+    }
+    &-icon {
+      display: flex;
+      @include respond(tab-port){
+       justify-content: center;
+       margin-bottom: 5rem;
+      }
+      &-1 {
+        padding: 0.9rem 1.1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background: linear-gradient(
+          180deg,
+          rgba(140, 181, 96, 1) 0%,
+          rgba(99, 157, 43, 1) 100%
+        );
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &__menu {
+    margin-top: 1rem;
+    @include respond(tab-port){
+      text-align: center;
+     margin-bottom: 5rem;
+    }
+    &-list {
+      list-style: none;
+      margin-top: 4.5rem;
+      li {
+        &:not(:last-child) {
+          padding-bottom: 3.5rem;
+        }
+        a {
+          text-decoration: none;
+          color: $color-grey-light-2;
+        }
+      }
+    }
+  }
+}
+
+

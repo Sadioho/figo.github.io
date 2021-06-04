@@ -1,0 +1,19 @@
+.browse__nav {
+    text-align: start;
+    
+  &-list {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $color-grey-light-1;
+      display: block;
+      border-left: 3px solid $color-grey-light-1;
+      padding: 1.2rem  2rem ;
+      font-weight: 600;
+    }
+    .active_a{
+        color: $color-yellow;
+        border-left: 3px solid $color-yellow;
+    }
+  }
+}

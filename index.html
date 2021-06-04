@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FIGO RESTAURANT</title>
+</head>
+
+<body>
+    <div class="container-body">
+        <header class="header">
+            <div class="container">
+                <div class="row no-gutters justify-content-between">
+                    <div class="l-7 m-3 c-1 ">
+                        <div class="header__logo">
+                            <img src="./image/logo.png" alt="Logo FiGo">
+                        </div>
+                    </div>
+                    <div class="l-5 m-9 c-0">
+                        <div class="header__nav">
+                            <ul class="header__nav-item">
+                                <li class="active">Home</li>
+                                <li>Menu</li>
+                                <li>Service</li>
+                                <li>Sign In</li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="19.92" height="22.389"
+                                        viewBox="0 0 19.92 22.389">
+                                        <g id="Group_392" data-name="Group 392" transform="translate(-1527.08 -52)">
+                                            <path id="Path_1" data-name="Path 1"
+                                                d="M66.715,19.353,65.433,4.917a.617.617,0,0,0-.614-.563H62.183a4.423,4.423,0,0,0-8.846,0H50.7a.614.614,0,0,0-.614.563L48.8,19.353c0,.018,0,.037,0,.055a3.19,3.19,0,0,0,3.361,2.981h11.2a3.19,3.19,0,0,0,3.361-2.981A.223.223,0,0,0,66.715,19.353ZM57.76,1.236a3.19,3.19,0,0,1,3.187,3.118H54.573A3.19,3.19,0,0,1,57.76,1.236Zm5.6,19.916h-11.2a1.972,1.972,0,0,1-2.124-1.717L51.263,5.595h2.069V7.472a.618.618,0,1,0,1.236,0V5.595h6.378V7.472a.618.618,0,1,0,1.236,0V5.595h2.069l1.232,13.841A1.975,1.975,0,0,1,63.359,21.152Z"
+                                                transform="translate(1478.28 52)" />
+                                            <circle id="Ellipse_6" data-name="Ellipse 6" cx="2.5" cy="2.5" r="2.5"
+                                                transform="translate(1542 54)" fill="#ff0e0e" />
+                                        </g>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-0 m-0 c-6 navigation">
+                        <input type="checkbox" id="toggle" class="navigation__checkbox">
+                        <label for="toggle" class="navigation__button">
+                            <span class="navigation__icon">&nbsp;</span>
+                        </label>
+                        <div class="navigation__background">&nbsp;</div>
+
+                        <nav class="navigation__nav">
+                            <ul class="navigation__list">
+
+                                <li class="navigation__item"><a class="navigation__link" href="#">Home</a> </li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Menu</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Service</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Sign In</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.92" height="35.389"
+                                            viewBox="0 0 19.92 22.389">
+                                            <g id="Group_392" data-name="Group 392" transform="translate(-1527.08 -52)">
+                                                <path class="bag" id="Path_1" data-name="Path 1"
+                                                    d="M66.715,19.353,65.433,4.917a.617.617,0,0,0-.614-.563H62.183a4.423,4.423,0,0,0-8.846,0H50.7a.614.614,0,0,0-.614.563L48.8,19.353c0,.018,0,.037,0,.055a3.19,3.19,0,0,0,3.361,2.981h11.2a3.19,3.19,0,0,0,3.361-2.981A.223.223,0,0,0,66.715,19.353ZM57.76,1.236a3.19,3.19,0,0,1,3.187,3.118H54.573A3.19,3.19,0,0,1,57.76,1.236Zm5.6,19.916h-11.2a1.972,1.972,0,0,1-2.124-1.717L51.263,5.595h2.069V7.472a.618.618,0,1,0,1.236,0V5.595h6.378V7.472a.618.618,0,1,0,1.236,0V5.595h2.069l1.232,13.841A1.975,1.975,0,0,1,63.359,21.152Z"
+                                                    transform="translate(1478.28 52)" fill="#fff" />
+                                                <circle id="Ellipse_6" data-name="Ellipse 6" cx="2.5" cy="2.5" r="2.5"
+                                                    transform="translate(1542 54)" fill="#ff0e0e" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col l-6 c-12">
+                        <div class="header__content">
+                            <h1 class="heading-1">All in Good Taste Food With Figo.</h1>
+                            <p class="header__content-text">Quickly predominate standard compliant architecture
+                                and may have prospective internal or organic sources. </p>
+                            <form action="#" class="header__content-form">
+                                <input type="text" placeholder="Enter Your Address">
+                                <a href="#" type="submit" class="btn">Get Starter</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col l-6 c-12">
+                        <div class="header__img">
+                            <img src="./image/header.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="welcome padding-gutters">
+                <div id="scene" class="welcome__leaves">
+                    <div data-depth="3">
+                        <img src="./image/2536.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row  no-gutters">
+                        <div class="l-6 c-12 m-6 align-self-stretch">
+                            <div class="welcome__img ">
+                                <img src="./image/welcome.png" alt="cooking">
+                            </div>
+                        </div>
+                        <div class="l-6 c-12 m-6">
+                            <div class="welcome__content">
+                                <h3 class="heading-3">Welcome</h3>
+                                <h2 class="heading-2">Welcom to Figo <br> Restaurant</h2>
+
+                                <p class="text">Quickly predominate standards compliants architectures and
+                                    prospective internal or "organic" sources. Synergistically mesh
+                                    quality quality vectors for one-to-one leadership.</p>
+                                <p class="text">Quickly predominate standards compliants architectures and
+                                    prospective internal or "organic" sources. Synergistically mesh
+                                    quality quality vectors for one-to-one leadership.</p>
+
+                                <a href="#" class="btn display-inline-block">Explore Our Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reason padding-gutters">
+                <div id="scene-2" class="reason__leaves">
+                    <div data-depth="3"> <img src="./image/asset-13.png" alt=""></div>
+                </div>
+                <div class="container">
+                    <h3 class="heading-3">Reason</h3>
+                    <h2 class="heading-2">Why Choose Us?</h2>
+                    <div class="row ">
+                        <div class="col l-4 c-12 m-4 ">
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img src="./image/Icon.png" alt="icon1">
+                                </div>
+                                <div class="card__content">
+                                    <h4 class="heading-4">Various Menus</h4>
+                                    <p class="text">
+                                        Etiam feugiat eleifend est, odio
+                                        tempor vitaeVivamus maximus
+                                        scelerisque ipsum nec commodo.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-4 c-12 m-4">
+                            <div class="card margin-card">
+                                <div class="card__icon">
+                                    <img src="./image/Icon-1.png" alt="icon1">
+                                </div>
+                                <div class="card__content">
+                                    <h4 class="heading-4">Pocket Friendly Delivery</h4>
+                                    <p class="text">
+                                        Etiam feugiat eleifend est, odio
+                                        tempor vitaeVivamus maximus
+                                        scelerisque ipsum nec commodo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-12 m-4">
+                            <div class="card ">
+                                <div class="card__icon">
+                                    <img src="./image/Icon-2.png" alt="icon1">
+                                </div>
+                                <div class="card__content">
+                                    <h4 class="heading-4">Best Offers</h4>
+                                    <p class="text">
+                                        Etiam feugiat eleifend est, odio
+                                        tempor vitaeVivamus maximus
+                                        scelerisque ipsum nec commodo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="browse padding-gutters">
+                <div id="scene-3" class="browse__leaves">
+                    <div data-depth="3"> <img src="./image/asset-11.png" alt=""> </div>
+
+                </div>
+                <div class="container">
+                    <h3 class="heading-3">Browse</h3>
+                    <h2 class="heading-2">Explore Our Menu</h2>
+                    <div class="row ">
+                        <div class="col l-3 c-0">
+                            <div class="browse__nav">
+                                <ul class="browse__nav-list text">
+                                    <li><a class="active_a" href="#">Breakfast</a></li>
+                                    <li><a href="#">Lunch</a></li>
+                                    <li><a href="#">Dinner</a></li>
+                                    <li><a href="#">Desert</a></li>
+                                    <li><a href="#">Soups</a></li>
+                                    <li><a href="#">Drinks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-4">
+                            <div class="browse-card">
+
+                                <div class="browse-card__img">
+                                    <div class="browse-card__img-layout">
+                                        <div class="browse-card__img-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Cart" transform="translate(-1065 -2558)">
+                                                    <rect id="Rectangle_96" data-name="Rectangle 96" width="40"
+                                                        height="40" rx="5" transform="translate(1065 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1078 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Solid, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+
+
+
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Favourite" transform="translate(-1120 -2558)">
+                                                    <rect id="Rectangle_97" data-name="Rectangle 97" width="40"
+                                                        height="40" rx="5" transform="translate(1120 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1133 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <img src="./image/bre1.png" alt="">
+                                </div>
+                                <div class="browse-card__content">
+
+                                    <h4 class="heading-4">Various Menus</h4>
+                                    <svg class="browse-card__content-icon" xmlns="http://www.w3.org/2000/svg" width="94"
+                                        height="14" viewBox="0 0 94 14">
+                                        <text id="_" data-name="    " transform="translate(0 12)" fill="#ffb243"
+                                            font-size="13"
+                                            font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                            <tspan x="0" y="0">    </tspan>
+                                        </text>
+                                    </svg>
+                                    <p class="browse-card__content-price">$100 <span class="browse-card__content-sale">
+                                            20
+                                        </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4">
+                            <div class="browse-card">
+                                <div class="browse-card__img">
+                                    <div class="browse-card__img-layout">
+                                        <div class="browse-card__img-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Cart" transform="translate(-1065 -2558)">
+                                                    <rect id="Rectangle_96" data-name="Rectangle 96" width="40"
+                                                        height="40" rx="5" transform="translate(1065 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1078 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Solid, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Favourite" transform="translate(-1120 -2558)">
+                                                    <rect id="Rectangle_97" data-name="Rectangle 97" width="40"
+                                                        height="40" rx="5" transform="translate(1120 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1133 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <img src="./image/bre2.png" alt="">
+                                </div>
+                                <div class="browse-card__content">
+                                    <h4 class="heading-4">Various Menus</h4>
+                                    <svg class="browse-card__content-icon" xmlns="http://www.w3.org/2000/svg" width="94"
+                                        height="14" viewBox="0 0 94 14">
+                                        <text id="_" data-name="    " transform="translate(0 12)" fill="#ffb243"
+                                            font-size="13"
+                                            font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                            <tspan x="0" y="0">    </tspan>
+                                        </text>
+                                    </svg>
+                                    <p class="browse-card__content-price">$100 <span class="browse-card__content-sale">
+                                            20
+                                        </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4">
+                            <div class="browse-card">
+                                <div class="browse-card__img">
+                                    <div class="browse-card__img-layout">
+                                        <div class="browse-card__img-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Cart" transform="translate(-1065 -2558)">
+                                                    <rect id="Rectangle_96" data-name="Rectangle 96" width="40"
+                                                        height="40" rx="5" transform="translate(1065 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1078 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Solid, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40">
+                                                <g id="Favourite" transform="translate(-1120 -2558)">
+                                                    <rect id="Rectangle_97" data-name="Rectangle 97" width="40"
+                                                        height="40" rx="5" transform="translate(1120 2558)"
+                                                        fill="#fff" />
+                                                    <text id="_" data-name="" transform="translate(1133 2584)"
+                                                        fill="#212529" font-size="16"
+                                                        font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                                        <tspan x="0" y="0"></tspan>
+                                                    </text>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <img src="./image/bre3.png" alt="">
+                                </div>
+                                <div class="browse-card__content">
+                                    <h4 class="heading-4">Various Menus</h4>
+                                    <svg class="browse-card__content-icon" xmlns="http://www.w3.org/2000/svg" width="94"
+                                        height="14" viewBox="0 0 94 14">
+                                        <text id="_" data-name="    " transform="translate(0 12)" fill="#ffb243"
+                                            font-size="13"
+                                            font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'">
+                                            <tspan x="0" y="0">    </tspan>
+                                        </text>
+                                    </svg>
+                                    <p class="browse-card__content-price">$100 <span class="browse-card__content-sale">
+                                            20
+                                        </span></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row no-gutters flex-end">
+                        <div class="browse__button">
+                            <button class="browse__button-item">
+                                <i class="fas fa-arrow-left"></i>
+
+                            </button>
+                            <button class="browse__button-item">
+                                <i class="fas fa-arrow-right"></i>
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="history padding-gutters">
+                <div id="scene-4" class="history__leaves">
+                    <div data-depth="3"> <img src="./image/asset-12.png" alt=""></div>
+
+                </div>
+                <div class="container">
+                    <div class="row item-stretch no-gutters">
+                        <div class="l-6 m-6">
+                            <div class="welcome__content">
+                                <h3 class="heading-3">History of Figo</h3>
+                                <h2 class="heading-2">We Cook Tradition &
+                                    <br> Family Recipes
+                                </h2>
+
+                                <p class="text">Quickly predominate standards compliants architectures and
+                                    prospective internal or "organic" sources. Synergistically mesh
+                                    quality quality vectors for one-to-one leadership.</p>
+                                <p class="text">Quickly predominate standards compliants architectures and
+                                    prospective internal or "organic" sources. </p>
+
+                                <a href="#" class="btn display-inline-block">Explore Our Story</a>
+                            </div>
+
+
+                        </div>
+                        <div class="l-6 m-6 text-center">
+                            <div class="history__img ">
+                                <img src="./image/history.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testiomnials padding-gutters">
+                <div id="scene-5" class="testiomnials__leaves">
+                    <div data-depth="3">
+                        <img src="./image/asset-9.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <h3 class="heading-3">Testimonials</h3>
+                    <h2 class="heading-2">Food Lover's Say</h2>
+                    <div class="row height-25rem ">
+                        <div class="col l-4 c-12 m-4 align-self-center">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__text">
+                                    <p class="testimonial-card__text-item">
+                                        Design is an evolutionary process, and filler text
+                                        is just one tool in your progress-pushing arsenal.
+                                        Use it where it makes sense process.
+                                    </p>
+                                </div>
+                                <div class="testimonial-card__content">
+                                    <div class="testimonial-card__content-avatar">
+                                        <img src="./image/ImageBG1.png" alt="avatar">
+                                    </div>
+                                    <div class="testimonial-card__content-author">
+                                        <p class="author-name">
+                                            Lurch Schpellchek
+                                        </p>
+                                        <p class="author-job">
+                                            UI & UX @ Microsoft
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-12 m-4 align-self-start">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__text">
+                                    <p class="testimonial-card__text-item">
+                                        Relax and do whatever fits with your design
+                                        process. Don’t set a lot of restrictive hard-and-
+                                        fast rules your design process.
+                                    </p>
+                                </div>
+                                <div class="testimonial-card__content">
+                                    <div class="testimonial-card__content-avatar">
+                                        <img src="./image/ImageBG3.png" alt="avatar">
+                                    </div>
+                                    <div class="testimonial-card__content-author">
+                                        <p class="author-name">
+                                            Theodore Handle
+                                        </p>
+                                        <p class="author-job">
+                                            Design Lead @ Shopify
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-12 m-4 align-self-end">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__text">
+                                    <p class="testimonial-card__text-item">
+                                        The argument in favor of using filler something
+                                        like this use real content design.
+                                    </p>
+                                </div>
+                                <div class="testimonial-card__content">
+                                    <div class="testimonial-card__content-avatar">
+                                        <img src="./image/ImageBG4.png" alt="avatar">
+                                    </div>
+                                    <div class="testimonial-card__content-author">
+                                        <p class="author-name">
+                                            Valentino Morose
+                                        </p>
+                                        <p class="author-job">
+                                            Design Lead @ InVision
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center height-25rem">
+                        <div class="col l-4 c-12 m-4 align-self-start">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__text">
+                                    <p class="testimonial-card__text-item">
+                                        Surprisingly, there is a very vocal faction of the
+                                        design community that wants to see filler text
+                                        banished to the original sources came.
+                                    </p>
+                                </div>
+                                <div class="testimonial-card__content">
+                                    <div class="testimonial-card__content-avatar">
+                                        <img src="./image/ImageBG2.png" alt="avatar">
+                                    </div>
+                                    <div class="testimonial-card__content-author">
+                                        <p class="author-name">
+                                            Ingredia Nutrisha
+                                        </p>
+                                        <p class="author-job">
+                                            Linux Things @ Exposure Digital
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 c-12 m-4">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__text">
+                                    <p class="testimonial-card__text-item">
+                                        The ultimate purpose of any digital product,
+                                        whether a website, app, or HTML email, is
+                                        showcase great design.
+                                    </p>
+                                </div>
+                                <div class="testimonial-card__content">
+                                    <div class="testimonial-card__content-avatar">
+                                        <img src="./image/ImageBG5.png" alt="avatar">
+                                    </div>
+                                    <div class="testimonial-card__content-author">
+                                        <p class="author-name">
+                                            Hermann P. Schnitzel
+                                        </p>
+                                        <p class="author-job">
+                                            Sr.Designer @ Stepsize
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest padding-gutters">
+                <div class="container">
+                    <h3 class="heading-3">News</h3>
+                    <h2 class="heading-2">Latest News</h2>
+                    <div class="row padding-gutters-small">
+                        <div class=" col l-4 c-12 m-4">
+                            <div class="latest-card">
+                                <div class="latest-card__img">
+                                    <img src="image/latest1.png" alt="">
+                                </div>
+                                <div class="latest-card__content">
+                                    <h5 class="latest-card__content-title">Spain Appetizer</h5>
+                                    <p class="latest-card__content-text">Quickly of predominate and standards
+                                        compliiants and an architectures.</p>
+                                    <a href="#" class="latest-card__content-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-4 c-12 m-4">
+                            <div class="latest-card">
+                                <div class="latest-card__img">
+                                    <img src="image/lastest2.png" alt="">
+                                </div>
+                                <div class="latest-card__content">
+                                    <h5 class="latest-card__content-title">Wine And Cheese</h5>
+                                    <p class="latest-card__content-text">Quickly of predominate and standards
+                                        compliiants and an architectures.</p>
+                                    <a href="#" class="latest-card__content-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-4 c-12 m-4">
+                            <div class="latest-card">
+                                <div class="latest-card__img">
+                                    <img src="image/lastest3.png" alt="">
+                                </div>
+                                <div class="latest-card__content">
+                                    <h5 class="latest-card__content-title">Cups Of Coffee</h5>
+                                    <p class="latest-card__content-text">Quickly of predominate and standards
+                                        compliiants and an architectures.</p>
+                                    <a href="#" class="latest-card__content-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sub padding-gutters">
+                <div id="scene-5">
+
+                    <div data-depth="3" class="sub__leaves-1">
+                        <img src="./image/asset-10.png" alt="">
+                    </div>
+
+                    <div data-depth="3" class="sub__leaves-2">
+                        <img src="./image/asset-11.png" alt="">
+                    </div>
+
+                </div>
+                <div class="container">
+                    <h3 class="heading-3">Subscription</h3>
+                    <h2 class="heading-2">Wants to Get Update? </h2>
+                    <div class="row justify-content-center">
+                        <div class="l-6 c-12 m-8">
+                            <div class="sub-form mr-top-3">
+                                <form action="#" class="sub-form__form">
+                                    <input type="text" placeholder="Enter Your Email Address"
+                                        class="sub-form__form-input">
+                                    <button type="submit" class="sub-form__form-btn">
+                                        <svg id="Component_1_1" data-name="Component 1 – 1"
+                                            xmlns="http://www.w3.org/2000/svg" width="16.091" height="11.074"
+                                            viewBox="0 0 16.091 11.074">
+                                            <path id="Path_4" data-name="Path 4"
+                                                d="M15.872,46.924l-4.789-4.789a.748.748,0,1,0-1.058,1.058L13.537,46.7H.748a.748.748,0,1,0,0,1.5H13.537l-3.511,3.511a.748.748,0,0,0,1.058,1.058l4.788-4.789A.748.748,0,0,0,15.872,46.924Z"
+                                                transform="translate(0 -41.916)" fill="#fff" />
+                                        </svg>
+
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer ">
+        <div id="scene-6">
+            <div data-depth="0.2" class="footer__leaves-1">
+                <img src="./image/2535.png" alt="">
+            </div>
+        </div>
+        <div id="scene-7">
+            <div data-depth="0.2" class="footer__leaves-2">
+                <img src="./image/15.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col l-4 c-12 m-6 align-self-start">
+                    <div class="footer__logo">
+                        <div class="footer__logo-img">
+                            <img src="./image/logo.png" alt="footer">
+                        </div>
+                        <div class="footer__logo-content">
+                            <p class="footer__logo-text">Don't miss to subscribe to our new
+                                feeds, Kindly fill the form bellow.</p>
+                            <div class="footer__logo-icon">
+                                <div class="footer__logo-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                        viewBox="0 0 18 20">
+                                        <text id="_" data-name="" transform="translate(9 16)" fill="#fff"
+                                            font-size="18" font-family="icofont, IcoFont">
+                                            <tspan x="-9" y="0"></tspan>
+                                        </text>
+                                    </svg>
+
+                                </div>
+                                <div class="footer__logo-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                        viewBox="0 0 18 20">
+                                        <text id="_" data-name="" transform="translate(9 16)" fill="#fff"
+                                            font-size="18" font-family="icofont, IcoFont">
+                                            <tspan x="-9" y="0"></tspan>
+                                        </text>
+                                    </svg>
+
+
+                                </div>
+                                <div class="footer__logo-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                        viewBox="0 0 18 20">
+                                        <text id="_" data-name="" transform="translate(9 16)" fill="#fff"
+                                            font-size="18" font-family="icofont, IcoFont">
+                                            <tspan x="-9" y="0"></tspan>
+                                        </text>
+                                    </svg>
+
+
+                                </div>
+                                <div class="footer__logo-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                        viewBox="0 0 18 20">
+                                        <text id="_" data-name="" transform="translate(9 16)" fill="#fff"
+                                            font-size="18" font-family="icofont, IcoFont">
+                                            <tspan x="-9" y="0"></tspan>
+                                        </text>
+                                    </svg>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2 c-12 m-6 align-self-start ">
+                    <div class="footer__menu">
+                        <h5 class="title-bold">
+                            Our Menu
+                        </h5>
+                        <ul class="title-light footer__menu-list">
+                            <li><a href="">Lunch</a></li>
+                            <li><a href="">Dinner</a></li>
+                            <li><a href="">Catering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 c-12 m-6 align-self-start">
+                    <div class="footer__menu">
+                        <h5 class="title-bold">
+                            Links
+                        </h5>
+                        <ul class="title-light footer__menu-list">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Terms Of Use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 c-12 m-6 align-self-start">
+                    <div class="footer__menu">
+                        <h5 class="title-bold">
+                            Contact
+                        </h5>
+                        <ul class="title-light footer__menu-list">
+                            <li><a href="tel:+8801622010442">+8801622010442</a></li>
+                            <li><a href="mailto:info@restaurant.com">info@restaurant.com</a></li>
+                            <li><a href="#">Daudkandi, Comilla</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/parallax-js/dist/parallax.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
